@@ -1,5 +1,7 @@
 
 
+// icome part started
+
 function inputIncome() {
   const incomeInput = document.getElementById('income-input');
   if(incomeInput.value > 0){
@@ -16,6 +18,7 @@ else if(incomeInput.value < 0 ){
 }
 }
 
+// input food part stared 
 function inputFood() {
   const foodInput = document.getElementById('food-input');
   if(foodInput.value > 0){
@@ -32,6 +35,8 @@ function inputFood() {
  }
 
 }
+
+// input rent part starded 
 function inputRent() {
   const rentInput = document.getElementById('rent-input');
   if(rentInput.value > 0){
@@ -51,6 +56,8 @@ else if(rentInput.value < 0 ){
   alert('there is no negetive number supported')
 }
 }
+
+// input cloth Part started 
 function inputclotehs() {
   const clothInput = document.getElementById('clothes-input');
   if(clothInput.value > 0){
@@ -67,6 +74,9 @@ else if(clothInput.value < 0 ){
 }
 
 }
+
+
+// exappance + _ stard 
 
 function exapanceAmount() {
   const incomeAmount = inputIncome();
@@ -85,6 +95,8 @@ function exapanceAmount() {
 }
 
 }
+
+// total balce calculation
 function totalBalance() {
   const incomeAmount = inputIncome();
   const exapanceTotal = exapanceAmount()
@@ -105,7 +117,7 @@ function totalBalance() {
 
 
 
-
+// save money calcualtion
 function saveMoney() {
   const saveInput = document.getElementById('save-input')
 
@@ -129,6 +141,7 @@ else if(totalSaveAmount > balanceAmount){
 
 }
 
+// rest balace calculation last end 
 function restBalance(){
  const balanceTotal = totalBalance();
  const moneySave = saveMoney();
@@ -136,14 +149,21 @@ function restBalance(){
   const remeaningBalance = document.getElementById('remeaning-balance');
   const remeaningBalanceText = remeaningBalance.innerText;
   const remeaningAmount = balanceTotal - moneySave;
-  remeaningBalance.innerText = remeaningAmount;
+  if(remeaningAmount > 0){
 
+  
+  remeaningBalance.innerText = remeaningAmount;
 }
+}
+
+// add addEventListener in cal btn
 document.getElementById('cal-btn').addEventListener('click', function () {
   
   totalBalance()
 
 })
+
+// add addEventListener and function in save btn
 document.getElementById('save-btn').addEventListener('click', function () {
   saveMoney();
 
