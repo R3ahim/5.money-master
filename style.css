@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 /* header style */
 .header{
@@ -13,6 +16,7 @@ text-align: center;
  display: flex;
  align-items: center;
  justify-content: center;
+ margin: 0;
 }
 /* header text style  */
 .header-style{
@@ -41,7 +45,7 @@ text-align: center;
 }
 .half-img img{
     width: 100%;
-    height: 500px;
+    height: 700px
 }
 
 .information{
@@ -50,7 +54,7 @@ text-align: center;
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    background-color: rgb(155, 155, 41);
+    background-color: rgb(175, 175, 163);
     margin: 20px 20px;
 }
 .income-value{
@@ -62,7 +66,11 @@ text-align: center;
 
 .input-income{
     padding: 10px;
+    /* margin-right: 100px; */
     font-size: x-large;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 /* .input-expences{
   
@@ -72,7 +80,7 @@ text-align: center;
 /* input style */
 
 .input-style{
-    padding: 10px;
+    padding: 4px;
     margin: 10px;
     background-color: whitesmoke;
     border-radius: 5px;
@@ -132,12 +140,13 @@ Media Queries
                 
     }
     .half-img img{
-        width: 360px;
+        width: 340px;
+        height: 500px;
         
         
 }
     .information{
-        width: 360px;
+        width: 330px;
         margin:0;
     }
     /* header ; */
@@ -150,29 +159,4 @@ Media Queries
    }
 
 
-   /* 
-      // const totalExpance = document.getElementById('total-expense');
-
-        //  const totalExpanceText = parseFloat(totalExpance.innerText);
-        //  const incomeAmount=  inputIncome();
-         const foodAmount =  inputFood();
-         const rentAmount =  inputRent();
-         const clothAmount =  inputclotehs();
-        //  console.log(foodAmount,rentAmount,clothAmount);
-        //  const exapFull = exapanceAmount()
-    //     const totalExpanceText = parseFloat(totalExpance.innerText)
-    // console.log(totalExpanceText)
-    //       const totalExpanceAmount =  totalExpanceText  + inputFood()+ inputRent() + inputclotehs();
-    //       console.log(totalExpanceAmount);
-
-    //    totalExpance.innerText = totalExpanceAmount;
-
-
-    const totalExpance = document.getElementById('total-expense');
-
-    const totalExpanceText = parseFloat(totalExpance.innerText);
-    const totolExpnaceAmount= totalExpanceText + full();
-    console.log(totolExpnaceAmount)
-//      const totalExpanceAmount =   totalExpanceText + foodAmount + rentAmount + clothAmount;
   
-//   totalExpance.innerText = totalExpanceAmount; */
