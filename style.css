@@ -1,9 +1,18 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 /* header style */
+.header{
+text-align: center;
+}
+
 .header-contianer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 /* header text style  */
 .header-style{
@@ -53,6 +62,7 @@
 
 .input-income{
     padding: 10px;
+    font-size: x-large;
 }
 /* .input-expences{
   
@@ -81,7 +91,7 @@
     background-color: rgb(8, 172, 248);
     border-radius: 7px;
     border: none;
-    margin: 1px 40px;
+    margin: 1px 20px 40px;
     
 }
 /* sud style  */
@@ -91,7 +101,7 @@
     justify-content: center;
 }
 .input-save{
-    width: 60px;
+    width: 90px;
     padding: 10px 30px;
     background-color: beige;
 }
@@ -107,7 +117,12 @@ Media Queries
 /*===================== Mobile debices ++++++++++++++
 -------------*/
 @media only screen and (max-width:669px) {
-   
+   main{
+     display: flex;
+     align-items: center;
+     justify-content: center;  
+        margin: 0; 
+}
     .half-container{
         flex-direction: column;
     
@@ -116,9 +131,48 @@ Media Queries
                 width: 100%;
                 
     }
+    .half-img img{
+        width: 360px;
+        
+        
+}
     .information{
-        width: 100;
+        width: 360px;
+        margin:0;
     }
+    /* header ; */
 
-       
+    .header-style{
+        color: rgb(37, 190, 190);
+        font-size: 18px;
+        font-weight: bold;
+    }
    }
+
+
+   /* 
+      // const totalExpance = document.getElementById('total-expense');
+
+        //  const totalExpanceText = parseFloat(totalExpance.innerText);
+        //  const incomeAmount=  inputIncome();
+         const foodAmount =  inputFood();
+         const rentAmount =  inputRent();
+         const clothAmount =  inputclotehs();
+        //  console.log(foodAmount,rentAmount,clothAmount);
+        //  const exapFull = exapanceAmount()
+    //     const totalExpanceText = parseFloat(totalExpance.innerText)
+    // console.log(totalExpanceText)
+    //       const totalExpanceAmount =  totalExpanceText  + inputFood()+ inputRent() + inputclotehs();
+    //       console.log(totalExpanceAmount);
+
+    //    totalExpance.innerText = totalExpanceAmount;
+
+
+    const totalExpance = document.getElementById('total-expense');
+
+    const totalExpanceText = parseFloat(totalExpance.innerText);
+    const totolExpnaceAmount= totalExpanceText + full();
+    console.log(totolExpnaceAmount)
+//      const totalExpanceAmount =   totalExpanceText + foodAmount + rentAmount + clothAmount;
+  
+//   totalExpance.innerText = totalExpanceAmount; */
